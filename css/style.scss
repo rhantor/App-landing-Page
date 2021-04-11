@@ -381,20 +381,16 @@ nav{
     background: url(../img/download-app-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat ;
-    height: 470px;
+    height: 480px;
+    position: relative;
     z-index: 1;
-    .overlay{
-        z-index: -1;
-        background: var(--main-color);
-        opacity: .9;
-        height: 470px;
-    }
     .card{
+        background: #fff;
         .icon{
             font-size: 30px;
             margin-bottom: 1rem;
+            color:var(--main-color);
         }
-        z-index: 2;
         h3{
             font-weight: 600;
         }
@@ -404,7 +400,57 @@ nav{
             border-radius: 40px;
             padding: 12px 30px;
             font-weight: 500;
+            box-shadow: #313131 1px 1px 10px;
+        }
+        
+        .btn:focus{
+            box-shadow: #141414 1px 1px 10px;
+        }
+        .btn:hover{
+            color: var(--main-color);
+            background: #fff;
+            font-weight: 500;
         }
     }
 }
+#download-app::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--main-to-dark-color);
+    opacity: 0.8;
+    z-index: -1;
+}
+#working-step{
+    .working-item{
+        position: relative;
+        z-index: 1;
+        h3{
+            font-weight: 500;
+        }
+        .step{
+            background: var(--main-color);
+            border-radius: 50%;
+            font-size: 30px;
+            line-height: 2;
+            width: 60px;
+            height: 60px;
+            color: #fff;
+            font-weight: 600;
+            margin: 0 auto 20px;
 
+        }
+    }
+    .line::after{
+        content: "";
+        position: absolute;
+        height: 5px;
+        width: 100%;
+        top: 30px;
+        background:var(--main-color);
+        z-index: -1;
+    }
+}
