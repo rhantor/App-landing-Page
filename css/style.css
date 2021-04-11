@@ -469,4 +469,35 @@ nav .container .navbar-nav .nav-link:hover::after {
   max-width: 250px;
   width: 100%;
 }
+
+#download-app {
+  background: url(../img/download-app-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+  z-index: 1;
+}
+
+#download-app .overlay {
+  z-index: -1;
+  background: var(--main-color);
+  opacity: .9;
+  height: 450px;
+}
+
+#download-app .card {
+  z-index: 2;
+}
+
+#download-app .card h3 {
+  font-weight: 600;
+}
+
+#download-app .card .btn {
+  background: var(--main-color);
+  color: #fff;
+  border-radius: 40px;
+  padding: 12px 30px;
+  font-weight: 500;
+}
 /*# sourceMappingURL=style.css.map */
