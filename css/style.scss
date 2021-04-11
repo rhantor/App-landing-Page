@@ -381,15 +381,19 @@ nav{
     background: url(../img/download-app-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat ;
-    height: 450px;
+    height: 470px;
     z-index: 1;
     .overlay{
         z-index: -1;
         background: var(--main-color);
         opacity: .9;
-        height: 450px;
+        height: 470px;
     }
     .card{
+        .icon{
+            font-size: 30px;
+            margin-bottom: 1rem;
+        }
         z-index: 2;
         h3{
             font-weight: 600;
