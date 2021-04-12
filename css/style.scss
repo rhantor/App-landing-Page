@@ -554,3 +554,23 @@ nav{
        }
     }
 }
+#accordion{
+    .card{
+        box-shadow: 5px 5px 13px #555555;
+        margin-bottom: 15px;
+        .card-header{
+            background: var(--main-color);
+            a{
+                color: #fff;
+            }
+            div{
+                text-align: right;
+                margin-top: -30px;
+                i{
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
