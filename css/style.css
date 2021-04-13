@@ -20,6 +20,7 @@
   margin: 0;
   padding: 0;
   outline: none !important;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -474,13 +475,13 @@ nav .container .navbar-nav .nav-link:hover::after {
   background: url(../img/download-app-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 480px;
   position: relative;
   z-index: 1;
 }
 
 #download-app .card {
   background: #fff;
+  margin-bottom: 5rem;
 }
 
 #download-app .card .icon {
@@ -694,5 +695,83 @@ nav .container .navbar-nav .nav-link:hover::after {
 #accordion .card .card-header div i {
   color: #fff;
   cursor: pointer;
+}
+
+#contact {
+  background: var(--black-100);
+}
+
+#contact .FAQ h3 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+#contact .location h4 {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+#contact .location h4 span {
+  padding: 5px 12px 8px;
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+}
+
+#contact .location h4 span i {
+  font-size: 15px;
+  color: var(--main-color);
+}
+
+#contact .contact-area input, #contact .contact-area .form-control {
+  -webkit-box-shadow: 5px 5px 13px #555555;
+          box-shadow: 5px 5px 13px #555555;
+  font-weight: 500;
+}
+
+#contact .contact-area .btn {
+  margin-top: 15px;
+  background: var(--main-color);
+  color: #fff;
+  font-weight: 500;
+  -webkit-box-shadow: 5px 5px 13px #555555;
+          box-shadow: 5px 5px 13px #555555;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#contact .contact-area .btn:hover {
+  background: #fff;
+  color: var(--main-color);
+}
+
+#footer {
+  background: var(--main-color);
+  color: #fff;
+}
+
+#footer h3 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+#footer p.lead {
+  font-size: 15px;
+}
+
+#footer li {
+  list-style-type: none;
+  margin-bottom: 7px;
+}
+
+#footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+#footer a:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */

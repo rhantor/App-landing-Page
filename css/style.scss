@@ -21,6 +21,7 @@
     margin: 0;
     padding: 0;
     outline:none !important;
+    scroll-behavior: smooth;
 }
 body{
     font-family: 'Poppins', sans-serif;
@@ -381,11 +382,12 @@ nav{
     background: url(../img/download-app-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat ;
-    height: 480px;
+    
     position: relative;
     z-index: 1;
     .card{
         background: #fff;
+        margin-bottom: 5rem;
         .icon{
             font-size: 30px;
             margin-bottom: 1rem;
@@ -572,5 +574,75 @@ nav{
                 }
             }
         }
+    }
+}
+#contact{
+    background: var(--black-100);
+    .FAQ{
+        h3{
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    }
+    .location{
+        h4{
+            margin-bottom: 5px;
+            font-weight: 500;
+            span{
+                padding: 5px 12px 8px;
+                border: 2px solid var(--main-color);
+                border-radius:50% ;
+                i{
+                    font-size: 15px;
+                    color: var(--main-color);
+                }
+            }
+        }
+    }
+    .contact-area{
+        input, .form-control{
+            box-shadow: 5px 5px 13px #555555;
+            font-weight: 500;
+        }
+        .btn{
+            margin-top: 15px;
+            background: var(--main-color);
+            color: #fff;
+            font-weight: 500;
+            box-shadow: 5px 5px 13px #555555;
+            transition: .3s;
+        }
+        .btn:hover{
+            background: #fff;
+            color: var(--main-color);
+        }
+    }
+}
+#footer{
+    background: var(--main-color);
+    color: #fff;
+    
+    h3{
+        color: #fff;
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+    p.lead{
+        font-size: 15px;
+    }
+    li{
+        list-style-type: none;
+        margin-bottom: 7px;
+       
+    }
+    a{
+        color: #fff;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 15px;
+
+    }
+    a:hover{
+        text-decoration: underline;
     }
 }
