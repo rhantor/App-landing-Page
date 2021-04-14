@@ -98,6 +98,9 @@ nav{
     padding: 20px 0;
     .container{
         padding: 0 15px;
+        i{
+            color: #fff;
+        }
         .navbar-brand{
             font-size: 30px;
             color: #fff;
@@ -106,7 +109,7 @@ nav{
         }
         .navbar-nav{
             .nav-item{
-                margin-left: 40px;
+                margin-left: 30px;
                 .active::after{
                     content: "";
                     position: absolute;
@@ -646,3 +649,76 @@ nav{
         text-decoration: underline;
     }
 }
+
+
+
+// Media Queries
+@media screen and (max-width: 968px){
+    #home-inner{
+        min-height: 70vh;
+    }
+    .checked::after{
+        left: 51%;
+    }
+    .checked::before{
+        right: 43%;
+    }
+}
+@media screen and (max-width: 900px) {
+   .navbar-nav .nav-item{
+        margin-left:20px !important ;
+    }
+}
+@media screen and (max-width: 768px) {
+    .checked::after{
+        left: 51%;
+    }
+    .checked::before{
+        right: 41%;
+    }
+ }
+@media screen and (max-width: 666px) {
+    .line::after{
+        display: none;
+    }
+ }
+@media screen and (max-width: 576px){
+    #home-inner{
+        min-height: 50vh;
+        border-radius: 0 0 0 0;
+    }
+    .card{
+        margin-bottom: 3rem;
+    }
+    .app-ss-img{
+        margin-bottom: 2rem;
+    }
+    #footer{
+        text-align: center;
+        .col-sm-3{
+            margin-bottom: 3rem;
+        }
+    }
+    .checked::after{
+        left: 49%;
+    }
+    .checked::before{
+        right: 42%;
+    }
+}
+@media (max-width: 576px){
+.col-sm-5 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 42.666667%;
+    max-width: 42.666667%;
+}
+}
+@media screen and (max-width: 666px) {
+    .checked::after{
+        left: 48%;
+    }
+    .checked::before{
+        right: 40%;
+    }
+ }
